@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM amd64/node:18-alpine
 
 RUN apk add --no-cache build-base git python3
 
