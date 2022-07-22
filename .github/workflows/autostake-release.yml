@@ -22,11 +22,11 @@ jobs:
         service_account: 'github-actions-ultrawaves@ds-umee-hodl.iam.gserviceaccount.com'
     - uses: docker/login-action@v2
       with:
-        registry: us-docker.pkg.dev
+        registry: us-west2-docker.pkg.dev
         username: oauth2accesstoken
         password: ${{ steps.auth.outputs.access_token }}
     - uses: docker/build-push-action@v3
       with:
         context: autostake
         push: true
-        tags: 'us-docker.pkg.dev/ds-umee-hodl/ultrawaves/amd64/autostake:${{ steps.ver.outputs.VER }}'
+        tags: 'us-west2-docker.pkg.dev/ds-umee-hodl/ultrawaves/amd64/autostake:${{ steps.ver.outputs.VER }}'
