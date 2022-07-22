@@ -29,4 +29,4 @@ jobs:
       with:
         context: autostake
         push: true
-        tags: 'us-docker.pkg.dev/ds-umee-hodl/dockerwaves/amd64/autostake:${{ steps.ver.outputs.VER }}'
+        tags: 'us-docker.pkg.dev/ds-umee-hodl/ultrawaves/amd64/autostake:${{ steps.ver.outputs.VER }}'
