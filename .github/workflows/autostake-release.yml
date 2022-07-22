@@ -33,4 +33,4 @@ jobs:
     - uses: softprops/action-gh-release@v1
       with:
         name: 'autostake job ${{ steps.ver.outputs.VER }}'
-        tags: '`us-west2-docker.pkg.dev/ds-umee-hodl/ultrawaves/amd64/autostake:${{ steps.ver.outputs.VER }}`'
+        body: '`us-west2-docker.pkg.dev/ds-umee-hodl/ultrawaves/amd64/autostake:${{ steps.ver.outputs.VER }}`'
